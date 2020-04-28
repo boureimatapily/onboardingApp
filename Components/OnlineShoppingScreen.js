@@ -69,7 +69,8 @@ const styles = StyleSheet.create({
         justifyContent:"center",
         alignItems:"center",
         borderRadius:30,
-        alignSelf:"center"
+        alignSelf:"center",
+        marginTop:30
 
     },
     NextButton:{

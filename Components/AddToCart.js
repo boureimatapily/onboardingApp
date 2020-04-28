@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     contentText:{
         textAlign:"justify"
     },
-    ImageContainer:{},
+  
     image:{
         width:250,
         height:250
@@ -70,7 +70,8 @@ const styles = StyleSheet.create({
         justifyContent:"center",
         alignItems:"center",
         borderRadius:30,
-        alignSelf:"center"
+        alignSelf:"center",
+        marginTop:20
 
     },
     NextButton:{
@@ -81,7 +82,7 @@ const styles = StyleSheet.create({
     footer:{
         flexDirection:"row",
         alignItems:"center",
-        marginTop:50
+        marginTop:40
         
     },
     ProgressIcon:{
