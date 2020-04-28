@@ -8,7 +8,8 @@ import PaymentSuccessfulScreen from './Components/PaymentSuccessfulScreen';
 export default function App() {
   return (
     <View style={styles.container}>
-      <OnlineShoppingScreen />
+      {/* <OnlineShoppingScreen /> */}
+      <AddToCart />
     </View>
   );
 }
