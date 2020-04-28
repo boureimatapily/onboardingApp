@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     },
     NextButtonContainer:{
         backgroundColor:"#b978eb",
-        width:120,
+        width:150,
         height:50,
         justifyContent:"center",
         alignItems:"center",
@@ -75,7 +75,8 @@ const styles = StyleSheet.create({
     },
     NextButton:{
         fontSize:20,
-        color:"white"
+        color:"white",
+        fontWeight:"bold"
     },
     footer:{
         flexDirection:"row",
