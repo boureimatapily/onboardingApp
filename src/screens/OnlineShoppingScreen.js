@@ -4,6 +4,7 @@ import {Entypo} from '@expo/vector-icons'
 
 export class OnlineShoppingScreen extends Component {
     render() {
+        const {navigation} =this.props
         return (
             <View style={styles.container}>
                 <View style={styles.titleContainer}>
@@ -20,10 +21,11 @@ export class OnlineShoppingScreen extends Component {
                 </View>
 
                 <View style={styles.ImageContainer}>
-                    <Image source={require('../assets/shopping.png')} style={styles.image} />
+                    <Image source={require('../../assets/shopping.png')} style={styles.image} />
                 </View>
 
-                <TouchableOpacity style={styles.NextButtonContainer}>
+                <TouchableOpacity onPress={()=>
+                {navigation.navigate('AddToCart')}} style={styles.NextButtonContainer}>
                     <Text style={styles.NextButton}>Next</Text>
                 </TouchableOpacity>
 

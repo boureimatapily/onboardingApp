@@ -20,7 +20,7 @@ export class PaymentSuccessfulScreen extends Component {
                 </View>
 
                 <View style={styles.ImageContainer}>
-                    <Image source={require('../assets/successfull.png')} style={styles.image} />
+                    <Image source={require('../../assets/successfull.png')} style={styles.image} />
                 </View>
 
                 <TouchableOpacity style={styles.NextButtonContainer}>
