@@ -4,11 +4,15 @@ import { Entypo } from '@expo/vector-icons'
 
 export class AddToCartScreen extends Component {
     render() {
-        const { navigation } = this.props
+        const { navigation, route } = this.props
+        console.log(route.params)
+        const {newTitel} = route.params
         return (
             <View style={styles.container}>
                 <View style={styles.titleContainer}>
                     <Text style={styles.title}> ADD TO CART </Text>
+                    {/* <Text style={styles.title}> {route.params.newTitel} </Text> */}
+                    <Text style={styles.title}> {newTitel} </Text>
                 </View>
 
                 <View style={styles.content}>

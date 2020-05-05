@@ -24,7 +24,8 @@ export class OnlineShoppingScreen extends Component {
                     <Image source={require('../../assets/shopping.png')} style={styles.image} />
                 </View>
 
-                <TouchableOpacity onPress={() => { navigation.navigate('AddToCart') }} style={styles.NextButtonContainer}>
+                <TouchableOpacity onPress={() => { navigation.navigate('AddToCart',{newTitel:"hello from Ibrahim"}) }}
+                     style={styles.NextButtonContainer}>
                     <Text style={styles.NextButton}>Next</Text>
                 </TouchableOpacity>
 
