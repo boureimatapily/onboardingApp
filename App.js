@@ -1,16 +1,18 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import OnlineShoppingScreen from './Components/OnlineShoppingScreen';
-import AddToCart from './Components/AddToCart';
-import PaymentSuccessfulScreen from './Components/PaymentSuccessfulScreen';
+
+import OnlineShoppingScreen from './src/screens/OnlineShoppingScreen';
+import PaymentSuccessfulScreen from './src/screens/PaymentSuccessfulScreen';
+import AddToCart from './src/screens/AddToCart';
+
 
 
 export default function App() {
   return (
     <View style={styles.container}>
       <OnlineShoppingScreen />
-      {/* <AddToCart /> */}
-      {/* <PaymentSuccessfulScreen /> */}
+      {/* <AddToCart />
+       <PaymentSuccessfulScreen /> */}
     </View>
   );
 }
