@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native'
 import {Entypo} from '@expo/vector-icons'
 
-export class AddToCart extends Component {
+export class AddToCartScreen extends Component {
     render() {
         return (
             <View style={styles.container}>
@@ -20,7 +20,7 @@ export class AddToCart extends Component {
                 </View>
 
                 <View style={styles.ImageContainer}>
-                    <Image source={require('../assets/add.png')} style={styles.image} />
+                    <Image source={require('../../assets/add.png')} style={styles.image} />
                 </View>
 
                 <TouchableOpacity style={styles.NextButtonContainer}>
@@ -102,4 +102,4 @@ const styles = StyleSheet.create({
     },
 })
 
-export default AddToCart
+export default AddToCartScreen
