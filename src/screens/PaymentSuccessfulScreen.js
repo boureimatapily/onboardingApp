@@ -4,6 +4,7 @@ import {Entypo} from '@expo/vector-icons'
 
 export class PaymentSuccessfulScreen extends Component {
     render() {
+        const {navigation} = this.props
         return (
             <View style={styles.container}>
                 <View style={styles.titleContainer}>
@@ -23,13 +24,19 @@ export class PaymentSuccessfulScreen extends Component {
                     <Image source={require('../../assets/successfull.png')} style={styles.image} />
                 </View>
 
-                <TouchableOpacity style={styles.NextButtonContainer}>
+                <TouchableOpacity
+                    style={styles.NextButtonContainer}>
                     <Text style={styles.NextButton}>Get Started</Text>
                 </TouchableOpacity>
 
                 <View style={styles.footer}>
                     <Entypo name="progress-full" size={40} style={styles.ProgressIcon} />
-                    <Text style={styles.Previous}>Previous</Text>
+
+                    <TouchableOpacity onPress ={()=>{navigation.navigate('AddToCart')}}
+                             style={styles.Previous}>
+                                 <Text >Previous</Text>
+                     </TouchableOpacity>
+                   
                 </View>
                 
             </View>
